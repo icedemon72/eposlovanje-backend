@@ -31,7 +31,7 @@ export const handleGetBoughtProducts = async (req, res) => {
     const requestedBy = req.userTokenData;
     const { user, limit } = req.query;
     
-    if (requestedBy.role !== 'Admin' && requestedBy._id !== user) {
+    if (requestedBy.role !== 'Admin' || requestedBy._id !== user) {
       return res.status(403).send({message: 'Insufficient permissions!'});
     }
 
