@@ -1,0 +1,57 @@
+# POST http://localhost:3001 HTTP/1.1
+# content-type: application/json
+# {
+#     "username": "Test",
+#     "passowrd": "test"
+# }
+
+# GET http://localhost:3001/products
+# Content-Type: application/json
+
+# {
+
+# }
+
+# USER DATA 
+# {
+#     "name": "Admin",
+#     "username": "admin",
+#     "email": "test@gmail.com",
+#     "password": "admin",
+#     "address": "Admin",
+#     "country": "6578601d3d8913f7481dd9d9",
+#     "phone": "649653624",
+#     "wallet": 10000,
+#     "role": "Admin"
+#  }
+
+# POST http://localhost:3001/products
+# Content-Type: application/json
+
+# { 
+#     "name": "T-62",
+#     "variation": "B",
+#     "description": "Sovjetski tenk",
+#     "scale": "1:30",
+#     "quantity": 20,
+#     "price": 34.5,
+#     "modelType": "65771c3f2980332553870a35",
+#     "image": "T-55A/t55.jpg",
+#     "year": "1962",
+#     "manufacturer": "6579ee34fb2f59d25a17af33",
+#     "country": "6575cfee16f0848485cbb5f3",
+#     "tags": [
+#       "SSSR",
+#       "Rusija",
+#       "T-55",
+#       "Srednji tenk"
+#     ]
+#   }
+
+POST http://localhost:3001/users/login
+Content-Type: application/json
+
+{
+  "email": "test@gmail.com",
+  "passwword": "admin"
+}
